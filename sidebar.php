@@ -1,4 +1,4 @@
-﻿       <div id="templatemo_sidebar">
+       <div id="templatemo_sidebar">
     	
             <div id="templatemo_rss">
             
@@ -32,4 +32,10 @@
                 <li><a href="#">Curabitur non felis massa</a></li>
             </ul>
             
-        </div> <!-- end of templatemo_sidebar --> 
+        </div> 
+<div class="my-new-sidebar">
+<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('New Sidebar') ) : else : ?>
+<?php endif; ?>
+</div>
+
+<!-- end of templatemo_sidebar --> 
